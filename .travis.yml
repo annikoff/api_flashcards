@@ -1,0 +1,10 @@
+dist: trusty
+language: ruby
+rvm: 2.3.3
+env:
+  global:
+    - RAILS_ENV=test
+notifications:
+  email: false
+after_success: bundle exec codeclimate-test-reporter
+script: bundle exec rspec
