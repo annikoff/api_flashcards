@@ -4,7 +4,12 @@ rvm: 2.3.3
 env:
   global:
     - RAILS_ENV=test
+addons:
+  code_climate:
+    repo_token: b5c5917d90f448ac63f70946d2de85bdcc6f8d7b26ece533c106bfedb32b7789
 notifications:
   email: false
+before_script:
+  - bundle exec rake app:db:migrate
 after_success: bundle exec codeclimate-test-reporter
 script: bundle exec rspec

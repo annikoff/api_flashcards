@@ -1,9 +1,9 @@
 AllCops:
   Exclude:
     - 'bin/*'
-    - 'vendor/**/*'
+    - 'spec/dummy/bin/*'
+    - 'spec/dummy/db/**/*'
     - 'db/**/*'
-    - 'config/initializers/*'
   DisplayCopNames: true
   DisplayStyleGuide: true
   TargetRubyVersion: 2.3
