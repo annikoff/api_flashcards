@@ -7,8 +7,8 @@ module ApiFlashcards
     private
 
     def authenticate
-      user = authenticate_with_http_basic { |u, p| User.authenticate(u, p) }
-      request_http_basic_authentication unless user
+      @user = authenticate_with_http_basic { |u, p| User.authenticate(u, p) }
+      request_http_basic_authentication unless @user
     end
   end
 end

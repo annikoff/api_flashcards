@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe ApiFlashcards::MainController do
   describe 'index' do
-    let(:user) { User.create(email: 'test@test.ru', password: '123') }
+    let(:user) { create(:user) }
 
     it 'require basic authentication' do
       get root_path
