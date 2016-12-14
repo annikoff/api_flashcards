@@ -19,7 +19,7 @@ describe ApiFlashcards::MainController do
     it 'authenticate user with success' do
       get root_path, headers: http_authorization(user.email, user.password)
       expect(response).to have_http_status(200)
-      expect(JSON.parse response.body).to eq({ 'success' => true })
+      expect(JSON.parse(response.body)).to eq { 'success' => true }
     end
   end
 end
