@@ -1,0 +1,8 @@
+en:
+  global:
+    alerts:
+      incorrect_translation: 'You entered an invalid translation. Please try again.'
+      translation_from_misprint: 'You entered translation from misprint.
+        User translation: %{user_translation} / Original text: %{original_text} /
+        Translated text: %{translated_text}. Please try again.'
+      not_authorized: 'You are not authorized to perform this action.'

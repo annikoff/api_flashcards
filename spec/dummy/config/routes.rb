@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
-  mount ApiFlashcards::Engine => '/api_flashcards', as: 'api_flashcards'
+  mount ApiFlashcards::Engine => '/api', as: 'api_flashcards'
 end

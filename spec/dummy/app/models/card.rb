@@ -5,6 +5,17 @@ class Card < ApplicationRecord
   validate :texts_are_not_equal
   validates :user_id, :block_id, presence: true
 
+  def check_translation(user_translation)
+    case
+    when user_translation == translated_text
+      { state: true, distance: 0 }
+    when user_translation =~ %r{#{translated_text}}
+      { state: true, distance: 0.1 }
+    else
+      { state: false, distance: 2 }
+    end
+  end
+
   private
 
   def texts_are_not_equal
