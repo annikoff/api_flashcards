@@ -29,6 +29,15 @@ Metrics/PerceivedComplexity:
 Style/ConditionalAssignment:
   Enabled: false
 
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
 Metrics/BlockLength:
   Enabled: false
 

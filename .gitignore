@@ -6,3 +6,5 @@ log/*.log
 /spec/dummy/tmp/
 /spec/dummy/db/*.sqlite3
 /coverage/
+/doc/
+.yardoc

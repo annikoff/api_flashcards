@@ -9,14 +9,15 @@ ENV['RAILS_ENV'] ||= 'test'
 
 require File.expand_path('../dummy/config/environment.rb', __FILE__)
 require 'rspec/rails'
-
+require 'factory_girl_rails'
 require 'support/auth_helper'
 include AuthHelper
 
 Rails.backtrace_cleaner.remove_silencers!
 
 RSpec.configure do |config|
-  config.include Rails.application.routes.url_helpers
+  config.include FactoryGirl::Syntax::Methods
+  config.include ApiFlashcards::Engine.routes.url_helpers
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end

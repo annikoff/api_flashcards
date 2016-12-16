@@ -7,6 +7,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'sqlite3'
+  gem 'yard'
 end
 
 group :test do
