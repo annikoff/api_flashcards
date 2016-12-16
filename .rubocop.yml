@@ -35,6 +35,9 @@ Style/EmptyCaseCondition:
 Style/RegexpLiteral:
   Enabled: false
 
+Style/AsciiComments:
+  Enabled: false
+
 Metrics/BlockLength:
   Enabled: false
 
